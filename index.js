@@ -4,11 +4,12 @@ const cors = require("cors")
 
 app.use(express.json())
 app.use(cors())
+app.use(express.static('dist'))
 
 let people = [
     { 
       "id": "1",
-      "name": "Arto Hellas", 
+      "name": "Arto Hellasio", 
       "number": "040-123456"
     },
     { 
@@ -23,7 +24,7 @@ let people = [
     },
     { 
       "id": "4",
-      "name": "Mary Poppendieck", 
+      "name": "Mary Poppendick", 
       "number": "39-23-6423122"
     }
 ]
